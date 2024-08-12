@@ -26,7 +26,7 @@ class PaymentTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        print("payment")
         selectionStyle = .none // hücre seçildiğinde bu görsel değişiklik olmaz
         addSubview(iconImageView)
         addSubview(nameLabel)
@@ -47,7 +47,7 @@ class PaymentTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             iconImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.9),
-            iconImageView.widthAnchor.constraint(equalTo: heightAnchor, multiplier: 0.9),
+            iconImageView.widthAnchor.constraint(equalToConstant: 60),
             
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             nameLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 10),
