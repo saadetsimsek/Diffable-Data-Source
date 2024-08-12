@@ -14,4 +14,5 @@ enum Section {
 
 struct Row : Hashable {
     let title: String
+    
 }
